@@ -1,0 +1,3478 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sue+Ellen+Francisco&display=swap");
+a,
+a:visited,
+a:focus,
+a:active,
+a:link {
+  text-decoration: none;
+  outline: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+ul, ol, p, h1, h2, h3, h4 {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+button {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+input {
+  padding: 0;
+  outline: none;
+}
+
+textarea:focus {
+  outline: none;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *::after, *::before {
+  box-sizing: inherit;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: "Work Sans", sans-serif;
+}
+
+.wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  flex-grow: 1;
+}
+
+.container {
+  max-width: 1230px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.container__max {
+  max-width: 1950px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.donate__btn {
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 22px 36px;
+  color: #fff;
+  background-color: #FF6D6D;
+  border-radius: 34px;
+  text-transform: uppercase;
+  transition: all 0.5s ease;
+}
+.donate__btn:hover {
+  background-color: #77D7D3;
+}
+
+.discover {
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 22px 27px;
+  color: #2E4049;
+  background-color: #fff;
+  border-radius: 34px;
+  text-transform: uppercase;
+  transition: all 0.5s ease;
+}
+.discover:hover {
+  color: #fff;
+  background-color: #2E4049;
+}
+
+/* Header */
+.header {
+  background-color: #77D7D3;
+}
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__contact {
+  display: flex;
+  gap: 45px;
+}
+.header__contact-img {
+  padding-right: 7px;
+}
+.header__contact-phone {
+  font-size: 18px;
+  color: #126360;
+  transition: all 0.3s ease;
+}
+.header__contact-phone:hover {
+  color: #FF6D6D;
+}
+.header__contact-mail {
+  font-size: 18px;
+  color: #126360;
+  transition: all 0.3s ease;
+}
+.header__contact-mail:hover {
+  color: #FF6D6D;
+}
+.header__nav {
+  background-color: #4BC9C4;
+  padding: 27px 38px;
+}
+.header__nav-list {
+  display: flex;
+  align-items: center;
+  gap: 17px;
+}
+
+/* Nav */
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 0 30px;
+}
+.navigation__logo {
+  cursor: pointer;
+}
+
+.nav__menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav__list {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  margin-right: 60px;
+}
+.nav__item {
+  font-size: 18px;
+  font-weight: 500;
+  position: relative;
+}
+.nav__link {
+  cursor: pointer;
+  color: #2E4049;
+}
+.nav__link:hover {
+  color: #FF6D6D;
+}
+.nav__link-img {
+  padding-left: 5px;
+}
+
+.nav__item-border::after {
+  content: "";
+  position: absolute;
+  display: block;
+  height: 24px;
+  border: 1px solid #D0D0D0;
+  top: 0;
+  right: -30px;
+}
+
+.nav__item:hover .subnav {
+  display: block;
+}
+
+.subnav {
+  display: none;
+  position: absolute;
+  padding-top: 55px;
+  padding-right: 75px;
+  padding-left: 30px;
+  top: 100%;
+  left: -40%;
+  background-color: #fff;
+  z-index: 3;
+}
+.subnav__item {
+  font-size: 18px;
+  font-weight: 500;
+  padding-bottom: 20px;
+}
+
+/* Footer */
+.footer {
+  background-color: #2E4049;
+}
+.footer__inner {
+  display: flex;
+  justify-content: space-between;
+  padding: 115px 0 88px;
+}
+.footer__desc {
+  max-width: 375px;
+}
+.footer__logo {
+  padding-bottom: 25px;
+}
+.footer__text {
+  font-size: 20px;
+  line-height: 130%;
+  color: #fff;
+}
+.footer__nav-list {
+  display: flex;
+  gap: 15px;
+  padding-top: 30px;
+}
+.footer__title {
+  font-size: 25px;
+  font-weight: 700;
+  color: #fff;
+  padding-bottom: 25px;
+}
+.footer__container {
+  display: flex;
+  padding: 56px 50px;
+  background-color: #384C56;
+}
+.footer__group {
+  display: grid;
+  padding-right: 70px;
+}
+.footer__group:last-child {
+  padding: 0;
+}
+.footer__group-text {
+  font-size: 20px;
+  color: #fff;
+  width: 250px;
+  padding-bottom: 50px;
+}
+.footer__group-text:last-child {
+  padding: 0;
+}
+.footer__link {
+  font-size: 20px;
+  color: #fff;
+  padding-bottom: 7px;
+}
+.footer__link:hover {
+  color: #FF6D6D;
+}
+.footer__link:last-child {
+  padding: 0;
+}
+.footer__copyright {
+  font-size: 18px;
+  text-align: center;
+  color: #fff;
+  padding: 20px 0;
+}
+
+/* Saver */
+.saver {
+  background-image: url(../images/someone.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 920px;
+}
+.saver__inner {
+  max-width: 755px;
+  position: absolute;
+  top: 40%;
+}
+.saver__subtitle {
+  font-size: 50px;
+  font-family: "Sue Ellen Francisco", cursive;
+  color: #fff;
+}
+.saver__title {
+  font-size: 90px;
+  font-weight: 800;
+  font-family: "Shippori Mincho", serif;
+  color: #fff;
+}
+.saver__text {
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 500;
+  color: #fff;
+  padding: 6px 16px;
+  border: 2px solid #FFFFFF;
+  border-radius: 18px;
+  text-transform: uppercase;
+  left: 270px;
+  position: relative;
+}
+.saver__text::before {
+  content: "";
+  position: absolute;
+  display: block;
+  border: 1px solid #FFFFFF;
+  width: 265px;
+  right: 228px;
+  top: 50%;
+}
+.saver__ellipse {
+  position: absolute;
+  right: 470px;
+}
+.saver__btns {
+  display: flex;
+  gap: 15px;
+  padding-top: 30px;
+}
+.saver__button-shape {
+  fill: #212121;
+  fill-opacity: 0.8;
+}
+.saver__button-icon {
+  fill: #fff;
+}
+
+.saver::after {
+  content: "";
+  display: block;
+  background: linear-gradient(103.5deg, rgba(19, 35, 45, 0.69) 3.46%, rgba(29, 39, 45, 0) 51.8%);
+  height: 920px;
+}
+
+/* Intro */
+.intro__inner {
+  display: flex;
+  margin-top: -100px;
+  padding-bottom: 135px;
+  position: relative;
+}
+.intro__content-one {
+  max-width: 400px;
+  padding: 67px 40px;
+  background-color: #77D7D3;
+}
+.intro__title-one {
+  font-size: 35px;
+  font-weight: 800;
+  font-family: "Shippori Mincho", serif;
+  color: #2E4049;
+  padding-bottom: 15px;
+}
+.intro__text-one {
+  font-size: 20px;
+  width: 320px;
+  color: #4A4A4A;
+  line-height: 130%;
+  padding-bottom: 20px;
+}
+.intro__content-two {
+  max-width: 400px;
+  padding: 67px 40px;
+  background-color: #2E4049;
+}
+.intro__title-two {
+  font-size: 35px;
+  font-weight: 800;
+  font-family: "Shippori Mincho", serif;
+  width: 200px;
+  color: #fff;
+  padding-bottom: 15px;
+}
+.intro__text-two {
+  font-size: 20px;
+  line-height: 130%;
+  width: 320px;
+  color: #fff;
+  padding-bottom: 20px;
+}
+.intro__btn {
+  font-size: 18px;
+  font-weight: 500;
+  color: #fff;
+  text-transform: uppercase;
+  border-bottom: 1px solid #fff;
+  transition: all 0.5s ease;
+}
+.intro__btn:hover {
+  color: #FF6D6D;
+  border-bottom: 1px solid #FF6D6D;
+}
+.intro__video-link {
+  position: relative;
+}
+.intro__video-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 68px;
+  height: 48px;
+  border: none;
+  background-color: transparent;
+  transform: translate(-50%, -50%);
+  outline: none;
+  cursor: pointer;
+}
+.intro__button-shape {
+  fill: #212121;
+  fill-opacity: 0.8;
+}
+.intro__button-icon {
+  fill: #fff;
+}
+
+.intro__video:hover .intro__button-shape,
+.intro__btn:focus .intro__button-shape {
+  fill: #ff0000;
+  fill-opacity: 1;
+}
+
+/* About */
+.about__inner {
+  display: flex;
+  justify-content: space-between;
+}
+.about__desc {
+  max-width: 600px;
+}
+.about__subtitle {
+  font-size: 35px;
+  font-family: "Sue Ellen Francisco", cursive;
+  color: #FF6D6D;
+  padding-bottom: 5px;
+}
+.about__title {
+  font-size: 40px;
+  font-weight: 800;
+  font-family: "Shippori Mincho", serif;
+  line-height: 120%;
+  color: #2E4049;
+  width: 310px;
+  padding-bottom: 10px;
+}
+.about__text {
+  font-size: 20px;
+  line-height: 130%;
+  color: #727272;
+  padding-bottom: 30px;
+}
+.about__btn {
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #FF6D6D;
+  padding: 22px 40px;
+  border-radius: 34px;
+  transition: all 0.5s ease;
+}
+.about__btn:hover {
+  background-color: #77D7D3;
+}
+
+.donation__variety {
+  display: grid;
+  grid-template-columns: repeat(2, 3fr);
+  padding-bottom: 40px;
+}
+.donation__text {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 215%;
+  color: #727272;
+  position: relative;
+  padding-left: 35px;
+}
+.donation__text img {
+  position: absolute;
+  left: 0;
+  top: 8px;
+}
+.donation__title {
+  font-size: 25px;
+  font-weight: 800;
+  line-height: 120%;
+  font-family: "Shippori Mincho", serif;
+  padding-bottom: 30px;
+}
+.donation__progress {
+  max-width: 440px;
+  border: 4px solid #C5CECC;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  position: relative;
+}
+.donation__progress::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -4px;
+  left: -3px;
+  width: 220px;
+  border: 4px solid #FF6D6D;
+  border-radius: 10px;
+}
+.donation__goal {
+  display: flex;
+  justify-content: space-between;
+}
+.donation__goal-text {
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 120%;
+  font-family: "Shippori Mincho", serif;
+  color: #2E4049;
+  padding-bottom: 45px;
+}
+.donation__btn {
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #2E4049;
+  padding: 22px 45px;
+  border-radius: 34px;
+  transition: all 0.5s ease;
+}
+.donation__btn:hover {
+  color: #fff;
+  background-color: #77D7D3;
+}
+
+/* Donating */
+.donating__inner {
+  padding: 165px 0;
+}
+.donating__top {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-bottom: 50px;
+}
+.donating__subtitle {
+  font-size: 35px;
+  font-family: "Sue Ellen Francisco", cursive;
+  color: #FF6D6D;
+}
+.donating__title {
+  font-size: 40px;
+  font-weight: 800;
+  font-family: "Shippori Mincho", serif;
+  line-height: 120%;
+  color: #2E4049;
+  max-width: 620px;
+}
+.donating__btn {
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #FF6D6D;
+  padding: 22px 35px;
+  border-radius: 34px;
+  transition: all 0.5s ease;
+}
+.donating__btn:hover {
+  background-color: #77D7D3;
+}
+.donating__card {
+  padding-right: 35px;
+  position: relative;
+}
+.donating__card-top {
+  font-size: 25px;
+  font-weight: 800;
+  line-height: 120%;
+  color: #FF6D6D;
+  background-color: #fff;
+  padding: 8px 13px;
+  position: absolute;
+  top: 25px;
+  left: 25px;
+}
+.donating__slider-content {
+  margin-left: 370px;
+}
+.donating__card-desc {
+  padding: 34px 30px;
+}
+.donating__card-title {
+  font-size: 25px;
+  font-weight: 800;
+  line-height: 120%;
+  color: #2E4049;
+  max-width: 349px;
+  padding-bottom: 36px;
+}
+.donating__card-bar--one {
+  max-width: 376px;
+  border: 4px solid #C5CECC;
+  border-radius: 10px;
+  position: relative;
+}
+.donating__card-bar--one::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -4px;
+  left: -3px;
+  width: 188px;
+  border: 4px solid #FF6D6D;
+  border-radius: 10px;
+}
+.donating__card-bar--two {
+  max-width: 376px;
+  border: 4px solid #C5CECC;
+  border-radius: 10px;
+  position: relative;
+}
+.donating__card-bar--two::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -4px;
+  left: -3px;
+  width: 150px;
+  border: 4px solid #FF6D6D;
+  border-radius: 10px;
+}
+.donating__card-bar--three {
+  max-width: 376px;
+  border: 4px solid #C5CECC;
+  border-radius: 10px;
+  position: relative;
+}
+.donating__card-bar--three::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -4px;
+  left: -3px;
+  width: 112px;
+  border: 4px solid #FF6D6D;
+  border-radius: 10px;
+}
+.donating__card-bar--four {
+  max-width: 376px;
+  border: 4px solid #C5CECC;
+  border-radius: 10px;
+  position: relative;
+}
+.donating__card-bar--four::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -4px;
+  left: -3px;
+  width: 251px;
+  border: 4px solid #FF6D6D;
+  border-radius: 10px;
+}
+.donating__card-bar--five {
+  max-width: 376px;
+  border: 4px solid #C5CECC;
+  border-radius: 10px;
+  position: relative;
+}
+.donating__card-bar--five::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -4px;
+  left: -3px;
+  width: 75px;
+  border: 4px solid #FF6D6D;
+  border-radius: 10px;
+}
+.donating__card-bar--six {
+  max-width: 376px;
+  border: 4px solid #C5CECC;
+  border-radius: 10px;
+  position: relative;
+}
+.donating__card-bar--six::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -4px;
+  left: -3px;
+  width: 112px;
+  border: 4px solid #FF6D6D;
+  border-radius: 10px;
+}
+.donating__card-progress {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 19px 0 36px;
+}
+.donating__card-raised {
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 120%;
+  color: #2E4049;
+}
+.donating__card-goal {
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 120%;
+  color: #FF6D6D;
+}
+.donating__card-btn {
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 500;
+  color: #fff;
+  background-color: #2E4049;
+  padding: 20px 36px;
+  border-radius: 34px;
+  border: 2px solid #2E4049;
+  transition: all 0.5s ease;
+}
+.donating__card-btn:hover {
+  color: #2E4049;
+  background-color: #fff;
+  border: 2px solid #2E4049;
+}
+.donating__btns {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 50px;
+  margin-right: 200px;
+  cursor: pointer;
+}
+
+/* Community */
+.community {
+  background-image: url(../images/community-bcg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 988px;
+}
+.community__inner {
+  display: flex;
+  justify-content: space-between;
+  padding: 142px 0;
+}
+.community__desc {
+  max-width: 575px;
+}
+.community__subtitle {
+  font-size: 35px;
+  font-family: "Sue Ellen Francisco", cursive;
+  color: #fff;
+  padding-bottom: 11px;
+}
+.community__title {
+  font-size: 40px;
+  font-weight: 800;
+  font-family: "Shippori Mincho", serif;
+  line-height: 120%;
+  color: #fff;
+  max-width: 530px;
+  padding-bottom: 14px;
+}
+.community__text {
+  font-size: 20px;
+  line-height: 130%;
+  color: #fff;
+  max-width: 575px;
+  padding-bottom: 16px;
+}
+.community__btn {
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #FF6D6D;
+  padding: 22px 39px;
+  border-radius: 34px;
+  margin-top: 30px;
+  transition: all 0.5s ease;
+}
+.community__btn:hover {
+  background-color: #77D7D3;
+}
+.community__form {
+  max-width: 570px;
+  border: 1px solid #fff;
+  padding: 48px 63px;
+}
+.community__form-title {
+  font-size: 35px;
+  font-weight: 800;
+  font-family: "Shippori Mincho", serif;
+  line-height: 120%;
+  color: #fff;
+  padding-bottom: 30px;
+}
+.community__form-input {
+  padding: 22px 224px 22px 22px;
+  background: transparent;
+  border: 1px solid #fff;
+  margin-bottom: 30px;
+}
+.community__form-input::-moz-placeholder {
+  font-size: 18px;
+  font-weight: 500;
+  color: #fff;
+}
+.community__form-input::placeholder {
+  font-size: 18px;
+  font-weight: 500;
+  color: #fff;
+}
+.community input:focus {
+  color: #fff;
+}
+.community__form-textarea {
+  font-size: 18px;
+  color: #fff;
+  background: transparent;
+  resize: none;
+  border: 1px solid #fff;
+  padding: 20px 202px 93px 22px;
+  margin-bottom: 30px;
+}
+.community__form-textarea::-moz-placeholder {
+  font-size: 18px;
+  font-weight: 500;
+  color: #fff;
+}
+.community__form-textarea::placeholder {
+  font-size: 18px;
+  font-weight: 500;
+  color: #fff;
+}
+.community__form-btn {
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #2E4049;
+  background-color: #fff;
+  padding: 22px 41px;
+  border-radius: 34px;
+  transition: all 0.5s ease;
+}
+.community__form-btn:hover {
+  background-color: #77D7D3;
+}
+
+/* People */
+.people__inner {
+  padding: 100px 0 150px;
+}
+.people__subtitle {
+  display: block;
+  font-size: 35px;
+  font-family: "Sue Ellen Francisco", cursive;
+  color: #FF6D6D;
+  text-align: center;
+  padding-bottom: 10px;
+}
+.people__title {
+  display: block;
+  font-size: 40px;
+  font-weight: 800;
+  font-family: "Shippori Mincho", serif;
+  line-height: 120%;
+  color: #2E4049;
+  text-align: center;
+  padding-bottom: 60px;
+}
+.people__content {
+  display: grid;
+  gap: 75px;
+  grid-template-columns: repeat(3, 2fr);
+}
+.people__block {
+  width: 348px;
+  text-align: center;
+}
+.people__block-title {
+  font-size: 25px;
+  font-weight: 800;
+  font-family: "Shippori Mincho", serif;
+  line-height: 120%;
+  color: #2E4049;
+}
+.people__block-text {
+  font-size: 20px;
+  line-height: 130%;
+  color: #727272;
+}
+
+/* Featured */
+.featured__inner {
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 100px;
+}
+.featured__header {
+  background-color: #202D33;
+  padding: 83px 103px;
+  max-width: 960px;
+}
+.featured__subtitle {
+  font-size: 35px;
+  font-family: "Sue Ellen Francisco", cursive;
+  color: #FF6D6D;
+}
+.featured__title {
+  font-size: 40px;
+  font-weight: 800;
+  font-family: "Shippori Mincho", serif;
+  line-height: 120%;
+  color: #fff;
+  padding-bottom: 15px;
+}
+.featured__text {
+  font-size: 20px;
+  line-height: 130%;
+  color: #fff;
+  max-width: 756px;
+  padding-bottom: 32px;
+}
+.featured__btn {
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #FF6D6D;
+  padding: 22px 30px;
+  border-radius: 34px;
+  transition: all 0.5s ease;
+}
+.featured__btn:hover {
+  background-color: #77D7D3;
+}
+.featured__block {
+  position: relative;
+}
+.featured__block img {
+  max-width: 480px;
+  height: 444px;
+}
+.featured__list {
+  position: absolute;
+  background-color: #FF6D6D;
+  top: 0%;
+  right: 0%;
+  bottom: 0%;
+  left: 0%;
+  max-width: 100%;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.8s ease;
+}
+.featured__link {
+  display: flex;
+  gap: 8px;
+  position: absolute;
+  bottom: 132px;
+  left: 39px;
+}
+.featured__link-btn {
+  display: inline-block;
+  font-size: 20px;
+  line-height: 130%;
+  color: #fff;
+  background-color: #E85353;
+  padding: 5px 18px;
+  border-radius: 50px;
+}
+.featured__list-text {
+  font-size: 30px;
+  font-weight: 800;
+  font-family: "Shippori Mincho", serif;
+  line-height: 120%;
+  color: #fff;
+  width: 348px;
+  position: absolute;
+  bottom: 46px;
+  left: 39px;
+}
+
+.featured__block:hover .featured__list {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Upcoming */
+.upcoming__inner {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 0 125px;
+}
+.upcoming__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.upcoming__desc {
+  max-width: 473px;
+}
+.upcoming__subtitle {
+  font-size: 35px;
+  font-family: "Sue Ellen Francisco", cursive;
+  color: #FF6D6D;
+}
+.upcoming__title {
+  font-size: 40px;
+  font-weight: 800;
+  font-family: "Shippori Mincho", serif;
+  line-height: 120%;
+  color: #2E4049;
+}
+.upcoming__btn {
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #FF6D6D;
+  padding: 22px 36px;
+  border-radius: 34px;
+  transition: all 0.5s ease;
+}
+.upcoming__btn:hover {
+  background-color: #77D7D3;
+}
+.upcoming__event {
+  max-width: 600px;
+  position: relative;
+}
+.upcoming__date {
+  font-size: 60px;
+  font-weight: 800;
+  font-family: "Shippori Mincho", serif;
+  color: #fff;
+  background-color: #FF6D6D;
+  padding: 21px 19px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.upcoming__date span {
+  font-size: 25px;
+  font-weight: 800;
+  display: flex;
+  justify-content: center;
+}
+.upcoming__organized {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  padding: 20px 0 28px;
+}
+.upcoming__organized::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  display: block;
+  width: 100%;
+  border: 1px solid #C7C7C7;
+}
+.upcoming__organized-name {
+  font-size: 20px;
+  line-height: 130%;
+}
+.upcoming__organized-name span {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 130%;
+  color: #2E4049;
+}
+.upcoming__organized-date {
+  font-size: 18px;
+  font-weight: 500;
+  color: #2E4049;
+  display: flex;
+}
+.upcoming__organized-date::before {
+  content: "";
+  display: block;
+  background-image: url(../images/time.svg);
+  width: 22px;
+  height: 22px;
+  margin-right: 13px;
+}
+.upcoming__event-title {
+  display: block;
+  font-size: 25px;
+  font-weight: 800;
+  font-family: "Shippori Mincho", serif;
+  line-height: 120%;
+  color: #2E4049;
+  padding-top: 16px;
+  transition: all 0.5s ease;
+}
+.upcoming__event-title:hover {
+  color: #FF6D6D;
+}
+.upcoming__event-text {
+  font-size: 20px;
+  line-height: 130%;
+  color: #727272;
+  padding: 12px 0 28px;
+}
+.upcoming__event-site {
+  font-size: 18px;
+  font-weight: 500;
+  color: #2E4049;
+  display: flex;
+}
+.upcoming__event-site::before {
+  content: "";
+  display: block;
+  background-image: url(../images/site.svg);
+  width: 20px;
+  height: 29px;
+  margin: 0 14px 0 20px;
+}
+.upcoming__more-content {
+  display: flex;
+  padding-bottom: 50px;
+}
+.upcoming__more-date {
+  display: inline-block;
+  font-size: 60px;
+  font-weight: 800;
+  font-family: "Shippori Mincho", serif;
+  color: #fff;
+  background-color: #2E4049;
+  padding: 21px 19px;
+  width: 116px;
+  margin-right: 20px;
+  transition: all 0.5s ease;
+}
+.upcoming__more-date span {
+  font-size: 25px;
+  font-weight: 800;
+  display: flex;
+  justify-content: center;
+}
+.upcoming__more-date:hover {
+  background-color: #FF6D6D;
+}
+.upcoming__more-desc {
+  max-width: 435px;
+  position: relative;
+}
+.upcoming__more-desc::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 565px;
+  border: 1px solid #C7C7C7;
+  right: 0;
+  margin: 25px 0;
+}
+.upcoming__more-organized {
+  font-size: 20px;
+  line-height: 130%;
+  color: #727272;
+  padding-bottom: 12px;
+}
+.upcoming__more-organized span {
+  font-size: 20px;
+  line-height: 130%;
+  color: #FF6D6D;
+}
+.upcoming__more-title {
+  font-size: 25px;
+  font-weight: 800;
+  font-family: "Shippori Mincho", serif;
+  line-height: 120%;
+  color: #2E4049;
+  padding-bottom: 24px;
+  transition: all 0.5s ease;
+}
+.upcoming__more-title:hover {
+  color: #FF6D6D;
+}
+.upcoming__more-text {
+  font-size: 20px;
+  line-height: 130%;
+  color: #727272;
+}
+
+/* Block */
+.block__inner {
+  display: flex;
+}
+.block__newsletter {
+  width: 100%;
+  padding: 74px 0;
+  background-color: #FF6D6D;
+  display: flex;
+  justify-content: center;
+}
+.block__newsletter-subtitle {
+  font-size: 35px;
+  font-family: "Sue Ellen Francisco", cursive;
+  color: #fff;
+}
+.block__newsletter-title {
+  font-size: 40px;
+  font-weight: 800;
+  font-family: "Shippori Mincho", serif;
+  line-height: 120%;
+  color: #fff;
+  padding-bottom: 15px;
+}
+.block__newscletter-text {
+  font-size: 20px;
+  line-height: 130%;
+  color: #fff;
+  max-width: 510px;
+  padding-bottom: 30px;
+}
+.block__newsletter-btns {
+  display: flex;
+  align-items: center;
+}
+.block__newsletter-input {
+  padding: 21px 166px 21px 26px;
+  border-radius: 34px;
+  border: 1px solid #fff;
+  margin-right: 20px;
+}
+.block__newsletter-input::-moz-placeholder {
+  font-size: 18px;
+  line-height: 130%;
+  color: #727272;
+}
+.block__newsletter-input::placeholder {
+  font-size: 18px;
+  line-height: 130%;
+  color: #727272;
+}
+.block__newsletter-btn {
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 500;
+  color: #fff;
+  background-color: #2E4049;
+  padding: 20px 36px;
+  border-radius: 34px;
+  border: 2px solid #2E4049;
+}
+.block__newsletter-btn:hover {
+  border: 2px solid #2E4049;
+  background-color: #fff;
+  color: #2E4049;
+}
+.block__recent {
+  background-image: url(../images/recent.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 398px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.block__recent-subtitle {
+  font-size: 35px;
+  font-family: "Sue Ellen Francisco", cursive;
+  color: #2E4049;
+}
+.block__recent-title {
+  font-size: 40px;
+  font-weight: 800;
+  font-family: "Shippori Mincho", serif;
+  line-height: 120%;
+  color: #2E4049;
+  max-width: 528px;
+  padding-bottom: 35px;
+}
+.block__recent-btn {
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 500;
+  color: #fff;
+  background-color: #2E4049;
+  padding: 20px 28px;
+  border-radius: 34px;
+  border: 2px solid #2E4049;
+  transition: all 0.5s ease;
+}
+.block__recent-btn:hover {
+  background-color: #fff;
+  color: #2E4049;
+  border: 2px solid #2E4049;
+}
+
+/* About list */
+/* Organization */
+.organization {
+  background-image: url(../images/about.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 822px;
+  margin-bottom: 100px;
+}
+.organization__inner {
+  position: relative;
+}
+.organization__subtitle {
+  font-size: 50px;
+  font-family: "Sue Ellen Francisco", cursive;
+  color: #fff;
+  position: absolute;
+  top: 290px;
+}
+.organization__title {
+  font-size: 90px;
+  font-weight: 800;
+  font-family: "Shippori Mincho", serif;
+  color: #fff;
+  max-width: 590px;
+  position: absolute;
+  top: 350px;
+}
+
+.organization::after {
+  content: "";
+  display: block;
+  background: linear-gradient(101.14deg, rgba(19, 35, 45, 0.69) -19.64%, rgba(29, 39, 45, 0) 76.8%);
+  height: 822px;
+}
+
+/* Solutions */
+.solutions__inner {
+  display: flex;
+  align-items: center;
+  padding-bottom: 270px;
+}
+.solutions__block {
+  position: relative;
+}
+.solutions__container {
+  display: flex;
+  background-color: #2E4049;
+  align-items: center;
+  max-width: 460px;
+  padding: 55px 50px;
+  position: absolute;
+  bottom: -105px;
+  left: -50px;
+}
+.solutions__container span {
+  font-size: 25px;
+  font-weight: 800;
+  line-height: 120%;
+  color: #fff;
+  width: 260px;
+}
+.solutions__container img {
+  padding-right: 20px;
+}
+.solutions__desc {
+  max-width: 600px;
+  padding-left: 40px;
+}
+.solutions__subtitle {
+  font-size: 35px;
+  font-family: "Sue Ellen Francisco", cursive;
+  color: #FF6D6D;
+  padding-bottom: 5px;
+}
+.solutions__title {
+  font-size: 40px;
+  font-weight: 800;
+  font-family: "Shippori Mincho", serif;
+  line-height: 120%;
+  color: #2E4049;
+  max-width: 495px;
+  padding-bottom: 20px;
+}
+.solutions__text {
+  font-size: 20px;
+  color: #727272;
+  line-height: 130%;
+  padding-bottom: 15px;
+}
+.solutions__text-bottom {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 130%;
+  color: #538582;
+  background-color: #DEF1F0;
+  padding: 20px 0;
+  margin-bottom: 40px;
+}
+.solutions__btn {
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #2E4049;
+  padding: 20px 40px;
+  border-radius: 34px;
+  border: 2px solid #2E4049;
+  transition: all 0.5s ease;
+}
+.solutions__btn:hover {
+  background-color: #fff;
+  color: #2E4049;
+  border: 2px solid #2E4049;
+}
+
+/* Clients */
+.clients__inner {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 130px;
+}
+
+/* Target */
+.target__inner {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 188px;
+}
+
+.goal {
+  max-width: 560px;
+}
+.goal__title {
+  font-size: 35px;
+  font-weight: 800;
+  font-family: "Shippori Mincho", serif;
+  line-height: 120%;
+  color: #2E4049;
+  padding-bottom: 15px;
+}
+.goal__text {
+  font-size: 20px;
+  line-height: 130%;
+  color: #727272;
+}
+.goal__variety {
+  display: grid;
+  row-gap: 30px;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 35px 0;
+}
+.goal__variety-img {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.goal__variety-text {
+  font-size: 20px;
+  color: #727272;
+  position: relative;
+  padding-left: 35px;
+}
+
+.mission {
+  position: relative;
+}
+.mission__title {
+  font-size: 40px;
+  font-weight: 800;
+  font-family: "Shippori Mincho", serif;
+  line-height: 120%;
+  color: #2E4049;
+  padding-bottom: 10px;
+}
+.mission__text {
+  font-size: 20px;
+  line-height: 130%;
+  color: #727272;
+  max-width: 566px;
+  padding-bottom: 33px;
+}
+.mission__block {
+  background-color: #77D7D3;
+  width: 65%;
+  text-align: center;
+  padding: 40px 0;
+  position: absolute;
+  bottom: -75px;
+  left: 30px;
+}
+.mission__block-title {
+  font-size: 73px;
+  font-weight: 800;
+  font-family: "Shippori Mincho", serif;
+  line-height: 120%;
+  color: #2E4049;
+}
+.mission__block-text {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 130%;
+  color: #2E4049;
+}
+
+/* Volunteers */
+.volunteers__subtitle {
+  font-size: 35px;
+  font-family: "Sue Ellen Francisco", cursive;
+  text-align: center;
+  color: #FF6D6D;
+}
+.volunteers__title {
+  font-size: 40px;
+  font-weight: 800;
+  font-family: "Shippori Mincho", serif;
+  line-height: 120%;
+  text-align: center;
+  color: #2E4049;
+}
+.volunteers__inner {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 0 140px;
+}
+.volunteers__name {
+  font-size: 20px;
+  font-weight: 800;
+  font-family: "Shippori Mincho", serif;
+  text-align: center;
+  color: #2E4049;
+  padding: 16px 0 20px;
+}
+.volunteers__social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 17px;
+}
+.volunteers__become {
+  width: 282px;
+  background-color: #77D7D3;
+}
+.volunteers__become-img {
+  margin-top: 64px;
+  margin-bottom: 15px;
+  margin-left: 100px;
+}
+.volunteers__become-title {
+  font-size: 25px;
+  font-weight: 800;
+  font-family: "Shippori Mincho", serif;
+  line-height: 120%;
+  text-align: center;
+  color: #2E4049;
+  max-width: 152px;
+  margin-left: 65px;
+  margin-bottom: 17px;
+}
+.volunteers__become-text {
+  font-size: 20px;
+  line-height: 130%;
+  color: #2E4049;
+  width: 240px;
+  text-align: center;
+  max-width: 240px;
+  margin-bottom: 15px;
+  margin-left: 21px;
+}
+.volunteers__become-btn {
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 20px 32px;
+  background: #2E4049;
+  border-radius: 34px;
+  align-items: center;
+  margin-left: 40px;
+  transition: all 0.5s ease;
+  border: 2px solid #2E4049;
+}
+.volunteers__become-btn:hover {
+  color: #2E4049;
+  background-color: #fff;
+  border: 2px solid #2E4049;
+}
+
+/* Newsletter */
+.newsletter {
+  background-image: url(../images/newsletter.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 550px;
+}
+.newsletter__inner {
+  text-align: center;
+  padding-top: 144px;
+}
+.newsletter__subtitle {
+  font-size: 35px;
+  font-family: "Sue Ellen Francisco", cursive;
+  color: #fff;
+}
+.newsletter__title {
+  font-size: 40px;
+  font-weight: 800;
+  font-family: "Shippori Mincho", serif;
+  color: #fff;
+  padding-bottom: 17px;
+}
+.newsletter__text {
+  font-size: 20px;
+  color: #fff;
+  max-width: 770px;
+  margin: 0 auto;
+  padding-bottom: 40px;
+}
+.newsletter__input {
+  padding: 21px 166px 21px 26px;
+  border-radius: 34px;
+  margin-right: 20px;
+  border: 1px solid #fff;
+}
+.newsletter__input::-moz-placeholder {
+  font-size: 18px;
+  font-weight: 500;
+  color: #727272;
+  width: 222px;
+}
+.newsletter__input::placeholder {
+  font-size: 18px;
+  font-weight: 500;
+  color: #727272;
+  width: 222px;
+}
+.newsletter__btn {
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #fff;
+  background: #2E4049;
+  border-radius: 34px;
+  padding: 20px 36px;
+  border: 2px solid #2E4049;
+  transition: all 0.5s ease;
+}
+.newsletter__btn:hover {
+  border: 2px solid #2E4049;
+  background-color: #fff;
+  color: #2E4049;
+}
+
+/* Causes list */
+/* Causes */
+.causes {
+  background-image: url(../images/causes.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 822px;
+}
+.causes__inner {
+  position: relative;
+}
+.causes__subtitle {
+  font-size: 50px;
+  font-family: "Sue Ellen Francisco", cursive;
+  color: #fff;
+  position: absolute;
+  top: 333px;
+}
+.causes__title {
+  font-size: 90px;
+  font-weight: 800;
+  font-family: "Shippori Mincho", serif;
+  color: #fff;
+  position: absolute;
+  top: 400px;
+}
+
+.causes::after {
+  content: "";
+  display: block;
+  background: linear-gradient(103.5deg, rgba(19, 35, 45, 0.69) 3.46%, rgba(29, 39, 45, 0) 51.8%);
+  height: 822px;
+}
+
+/* Donate */
+.donate__inner {
+  display: grid;
+  grid-template-columns: repeat(2, 3fr);
+  row-gap: 75px;
+  gap: 32px;
+  padding: 164px 0;
+}
+.donate__container {
+  max-width: 584px;
+  position: relative;
+}
+.donate__goal {
+  display: inline-block;
+  font-size: 25px;
+  font-weight: 800;
+  font-family: "Shippori Mincho", serif;
+  color: #FF6D6D;
+  background-color: #fff;
+  padding: 8px 13px;
+  position: absolute;
+  top: 25px;
+  left: 25px;
+}
+.donate__title {
+  font-size: 25px;
+  font-weight: 800;
+  font-family: "Shippori Mincho", serif;
+  line-height: 120%;
+  color: #2E4049;
+  max-width: 500px;
+  margin: 0 auto;
+  padding-top: 43px;
+}
+.donate__block {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 28px;
+}
+.donate__block-target {
+  font-size: 20px;
+  font-weight: 800;
+  font-family: "Shippori Mincho", serif;
+  line-height: 120%;
+  color: #2E4049;
+}
+.donate__block-btn {
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #2E4049;
+  padding: 22px 36px;
+  border-radius: 34px;
+  border: 2px solid #2E4049;
+  transition: all 0.5s ease;
+}
+.donate__block-btn:hover {
+  border: 2px solid #2E4049;
+  background-color: #fff;
+  color: #2E4049;
+}
+
+/* Causes-single list */
+/* Charity */
+.charity {
+  background-image: url(../images/charity.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  height: 822px;
+}
+.charity::after {
+  content: "";
+  display: block;
+  background: linear-gradient(102.44deg, rgba(19, 35, 45, 0.74) 1.05%, rgba(9, 14, 16, 0.5) 100.34%);
+  height: 822px;
+}
+.charity__inner {
+  position: relative;
+}
+.charity__subtitle {
+  font-size: 50px;
+  font-family: "Sue Ellen Francisco", cursive;
+  color: #fff;
+  position: absolute;
+  top: 333px;
+}
+.charity__title {
+  font-size: 90px;
+  font-weight: 800;
+  font-family: "Shippori Mincho", serif;
+  color: #fff;
+  position: absolute;
+  top: 400px;
+}
+
+/* Description */
+.description__inner {
+  padding: 140px 0 65px;
+}
+.description__content {
+  margin-left: 150px;
+}
+.description__title-top {
+  font-size: 35px;
+  font-weight: 800;
+  font-family: "Shippori Mincho", serif;
+  line-height: 120%;
+  color: #2E4049;
+  padding: 100px 0;
+}
+.description__title {
+  font-size: 35px;
+  font-weight: 800;
+  font-family: "Shippori Mincho", serif;
+  line-height: 120%;
+  color: #2E4049;
+  padding: 22px 0 14px;
+}
+.description__title-top::after {
+  content: "";
+  display: block;
+  max-width: 895px;
+  border: 1px solid #BEBEBE;
+  margin-top: 54px;
+}
+.description__subtitle {
+  font-size: 25px;
+  font-weight: 800;
+  font-family: "Shippori Mincho", serif;
+  line-height: 120%;
+  color: #2E4049;
+  padding-bottom: 15px;
+}
+.description__text {
+  font-size: 20px;
+  line-height: 130%;
+  color: #727272;
+  padding-bottom: 35px;
+  max-width: 900px;
+}
+
+/* Support */
+.support__inner {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 83px 0;
+}
+.support__content {
+  max-width: 430px;
+}
+.support__title {
+  font-size: 35px;
+  font-weight: 800;
+  font-family: "Shippori Mincho", serif;
+  line-height: 120%;
+  color: #2E4049;
+  padding-bottom: 15px;
+}
+.support__text {
+  font-size: 20px;
+  line-height: 130%;
+  color: #727272;
+  max-width: 428px;
+  padding-bottom: 20px;
+}
+.support__scan {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-bottom: 37px;
+}
+.support__scan-text {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 128%;
+  width: 198px;
+}
+.support__scan-text span {
+  text-transform: uppercase;
+  color: #FF6D6D;
+}
+.support__subtitle {
+  font-size: 25px;
+  font-weight: 800;
+  font-family: "Shippori Mincho", serif;
+  line-height: 120%;
+  color: #2E4049;
+  padding-bottom: 22px;
+}
+.support__methods {
+  display: flex;
+  justify-content: space-around;
+}
+
+.bank__title {
+  font-size: 35px;
+  font-weight: 800;
+  font-family: "Shippori Mincho", serif;
+  line-height: 120%;
+  color: #2E4049;
+  padding-bottom: 15px;
+}
+.bank__text {
+  font-size: 20px;
+  line-height: 130%;
+  color: #727272;
+  max-width: 447px;
+  padding-bottom: 45px;
+}
+.bank__details {
+  display: grid;
+  grid-template-columns: repeat(2, 3fr);
+  row-gap: 35px;
+  padding-bottom: 45px;
+}
+.bank__details-text {
+  font-size: 20px;
+  line-height: 130%;
+  color: #2E4049;
+}
+.bank__details-info {
+  font-size: 20px;
+  font-weight: 500;
+  color: #2E4049;
+}
+.bank__btn {
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #2E4049;
+  border-radius: 34px;
+  padding: 20px 39px;
+  border: 2px solid #2E4049;
+  transition: all 0.5s ease;
+}
+.bank__btn:hover {
+  background-color: #fff;
+  color: #2E4049;
+}
+
+/* Challenge */
+.challenge__inner {
+  margin-left: 150px;
+  padding: 100px 0;
+}
+.challenge__title {
+  font-size: 25px;
+  font-weight: 800;
+  line-height: 120%;
+  color: #2E4049;
+  padding-bottom: 15px;
+}
+.challenge__text {
+  font-size: 20px;
+  line-height: 130%;
+  color: #727272;
+  line-height: 130%;
+  max-width: 900px;
+  padding-bottom: 54px;
+}
+.challenge__video {
+  max-width: 900px;
+}
+.challenge__video-link {
+  position: relative;
+}
+.challenge__video-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 68px;
+  height: 48px;
+  border: none;
+  background-color: transparent;
+  transform: translate(-50%, -50%);
+  outline: none;
+  cursor: pointer;
+}
+.challenge__button-shape {
+  fill: #212121;
+  fill-opacity: 0.8;
+}
+.challenge__button-icon {
+  fill: #fff;
+}
+
+.challenge__video:hover .challenge__button-shape,
+.challenge__btn:focus .challenge__button-shape {
+  fill: #ff0000;
+  fill-opacity: 1;
+}
+
+/* Event list */
+/* Banner */
+.banner {
+  background-image: url(../images/banner.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 822px;
+}
+.banner__inner {
+  position: relative;
+}
+.banner__subtitle {
+  font-size: 50px;
+  font-family: "Sue Ellen Francisco", cursive;
+  color: #fff;
+  position: absolute;
+  top: 333px;
+}
+.banner__title {
+  font-size: 90px;
+  font-weight: 800;
+  font-family: "Shippori Mincho", serif;
+  color: #fff;
+  position: absolute;
+  top: 400px;
+}
+
+.banner::after {
+  content: "";
+  display: block;
+  background: linear-gradient(102.44deg, rgba(19, 35, 45, 0.5) 1.05%, rgba(9, 14, 16, 0.5) 100.34%);
+  height: 822px;
+}
+
+/* Events */
+.events__inner {
+  display: grid;
+  row-gap: 50px;
+  gap: 81px;
+  grid-template-columns: repeat(2, 3fr);
+  padding: 150px 0;
+}
+.events__container {
+  position: relative;
+  max-width: 560px;
+}
+.events__date-active {
+  font-size: 25px;
+  font-weight: 800;
+  font-family: "Shippori Mincho", serif;
+  color: #fff;
+  background-color: #FF6D6D;
+  width: 116px;
+  padding: 21px 0;
+  text-align: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.events__date-active span {
+  font-size: 60px;
+  font-weight: 800;
+  color: #fff;
+}
+.events__date {
+  font-size: 25px;
+  font-weight: 800;
+  font-family: "Shippori Mincho", serif;
+  color: #fff;
+  background-color: #2E4049;
+  width: 116px;
+  padding: 21px 0;
+  text-align: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 0.4s ease-in;
+}
+.events__date:hover {
+  background-color: #FF6D6D;
+}
+.events__date span {
+  font-size: 60px;
+  font-weight: 800;
+  color: #fff;
+}
+.events__organized {
+  font-size: 20px;
+  color: #727272;
+  padding-top: 20px;
+}
+.events__organized span {
+  font-size: 20px;
+  font-weight: 500;
+  color: #2E4049;
+}
+.events__organized::after {
+  content: "";
+  display: block;
+  max-width: 560px;
+  border: 1px solid #C7C7C7;
+  margin: 28px 0 16px;
+}
+.events__title {
+  font-size: 25px;
+  font-weight: 800;
+  font-family: "Shippori Mincho", serif;
+  color: #2E4049;
+  transition: all 0.4s ease;
+}
+.events__title:hover {
+  color: #FF6D6D;
+}
+.events__text {
+  font-size: 20px;
+  line-height: 130%;
+  color: #727272;
+  padding-top: 12px;
+}
+
+/* Event-single list */
+/* Education */
+.education {
+  background-image: url(../images/education.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  height: 822px;
+}
+.education::after {
+  content: "";
+  display: block;
+  background: linear-gradient(102.44deg, rgba(19, 35, 45, 0.5) 1.05%, rgba(9, 14, 16, 0.5) 100.34%);
+  height: 822px;
+}
+.education__inner {
+  position: relative;
+}
+.education__subtitle {
+  font-size: 50px;
+  font-family: "Sue Ellen Francisco", cursive;
+  color: #fff;
+  position: absolute;
+  top: 333px;
+}
+.education__title {
+  font-size: 90px;
+  font-weight: 800;
+  font-family: "Shippori Mincho", serif;
+  color: #fff;
+  position: absolute;
+  top: 400px;
+}
+
+/* Details */
+.details__inner {
+  padding: 140px 0 65px;
+}
+.details__block {
+  display: flex;
+  justify-content: center;
+  margin-top: -65px;
+}
+.details__content-start {
+  background-color: #FF6D6D;
+  width: 25%;
+  padding: 65px 30px;
+}
+.details__content-organizer {
+  background-color: #2E4049;
+  width: 25%;
+  padding: 65px 30px;
+}
+.details__content-venue {
+  background-color: #77D7D3;
+  width: 25%;
+  padding: 65px 30px;
+}
+.details__content-title {
+  font-size: 25px;
+  font-weight: 800;
+  font-family: "Shippori Mincho", serif;
+  line-height: 120%;
+  color: #fff;
+  padding-bottom: 17px;
+}
+.details__content-title--venue {
+  color: #2E4049;
+}
+.details__content-text {
+  font-size: 18px;
+  font-weight: 500;
+  color: #fff;
+  max-width: 240px;
+}
+.details__content-text-venue {
+  color: #2E4049;
+}
+.details__content-btn {
+  display: block;
+  font-size: 18px;
+  font-weight: 500;
+  color: #fff;
+  transition: all 0.4s ease;
+}
+.details__content-btn:hover {
+  color: #FF6D6D;
+}
+.details__desc {
+  max-width: 884px;
+  margin: 0 auto;
+}
+.details__title {
+  font-size: 35px;
+  font-weight: 800;
+  font-family: "Shippori Mincho", serif;
+  line-height: 120%;
+  color: #2E4049;
+  padding: 50px 0 15px;
+}
+.details__text {
+  font-size: 20px;
+  line-height: 130%;
+  color: #727272;
+  padding-bottom: 35px;
+}
+.details__subtitle {
+  font-size: 25px;
+  font-weight: 800;
+  font-family: "Shippori Mincho", serif;
+  color: #2E4049;
+  padding-bottom: 15px;
+}
+.details__list {
+  padding-left: 20px;
+}
+.details__item {
+  font-size: 20px;
+  color: #727272;
+  list-style-type: disc;
+  padding-bottom: 30px;
+}
+
+/* Team list */
+/* Member */
+.member {
+  background-image: url(../images/member.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom center;
+  height: 822px;
+}
+.member::after {
+  content: "";
+  display: block;
+  background: linear-gradient(102.44deg, rgba(19, 35, 45, 0.5) 1.05%, rgba(9, 14, 16, 0.5) 100.34%);
+  height: 822px;
+}
+.member__inner {
+  position: relative;
+}
+.member__subtitle {
+  font-size: 50px;
+  font-family: "Sue Ellen Francisco", cursive;
+  color: #fff;
+  position: absolute;
+  top: 333px;
+}
+.member__title {
+  font-size: 90px;
+  font-weight: 800;
+  font-family: "Shippori Mincho", serif;
+  color: #fff;
+  position: absolute;
+  top: 400px;
+}
+
+/* Team */
+.team__inner {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(3, 2fr);
+  padding: 150px 0 100px;
+}
+.team__container {
+  max-width: 380px;
+}
+.team__name {
+  font-size: 20px;
+  font-weight: 800;
+  font-family: "Shippori Mincho", serif;
+  text-align: center;
+  color: #2E4049;
+  padding: 21px 0 13px;
+}
+.team__social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 17px;
+}
+
+/* Join */
+.join {
+  background-image: url(../images/join.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  height: 550px;
+}
+.join__inner {
+  padding-top: 144px;
+  text-align: center;
+}
+.join__subtitle {
+  font-size: 35px;
+  font-family: "Sue Ellen Francisco", cursive;
+  color: #fff;
+}
+.join__title {
+  font-size: 40px;
+  font-weight: 800;
+  font-family: "Shippori Mincho", serif;
+  line-height: 120%;
+  color: #fff;
+  padding-bottom: 15px;
+}
+.join__text {
+  font-size: 20px;
+  line-height: 130%;
+  color: #fff;
+  max-width: 770px;
+  margin: 0 auto;
+  padding-bottom: 40px;
+}
+.join__btn {
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #2E4049;
+  padding: 20px 36px;
+  border-radius: 34px;
+  border: 2px solid #2E4049;
+  transition: all 0.5s ease;
+}
+.join__btn:hover {
+  border: 2px solid #2E4049;
+  background-color: #fff;
+  color: #2E4049;
+}
+
+/* Volunteer list */
+/* Help */
+.help {
+  background-image: url(../images/help.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom center;
+  height: 822px;
+}
+.help::after {
+  content: "";
+  display: block;
+  background: linear-gradient(102.44deg, rgba(19, 35, 45, 0.5) 1.05%, rgba(9, 14, 16, 0.5) 100.34%);
+  height: 822px;
+}
+.help__inner {
+  position: relative;
+}
+.help__subtitle {
+  font-size: 50px;
+  font-family: "Sue Ellen Francisco", cursive;
+  color: #fff;
+  position: absolute;
+  top: 333px;
+}
+.help__title {
+  font-size: 90px;
+  font-weight: 800;
+  font-family: "Shippori Mincho", serif;
+  color: #fff;
+  position: absolute;
+  top: 400px;
+}
+
+/* Impact */
+.impact__inner {
+  padding: 100px 0 50px;
+}
+.impact__container {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 100px;
+}
+.impact__desc-top {
+  max-width: 556px;
+}
+.impact img {
+  width: 603px;
+}
+.impact__desc-bottom {
+  max-width: 556px;
+}
+.impact__subtitle {
+  font-size: 35px;
+  font-family: "Sue Ellen Francisco", cursive;
+  color: #FF6D6D;
+  padding-bottom: 5px;
+}
+.impact__title {
+  font-size: 40px;
+  font-weight: 800;
+  font-family: "Shippori Mincho", serif;
+  line-height: 120%;
+  color: #2E4049;
+  max-width: 430px;
+  padding-bottom: 30px;
+}
+.impact__text {
+  font-size: 20px;
+  line-height: 130%;
+  color: #727272;
+  padding-bottom: 30px;
+}
+.impact__btn {
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #2E4049;
+  padding: 20px 45px;
+  border-radius: 34px;
+  border: 2px solid #2E4049;
+  transition: all 0.5s ease;
+}
+.impact__btn:hover {
+  background-color: #fff;
+  color: #2E4049;
+  border: 2px solid #2E4049;
+}
+
+/* Hearthful */
+.hearthful__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 100px;
+}
+.hearthful__desc {
+  max-width: 600px;
+}
+.hearthful__subtitle {
+  font-size: 35px;
+  font-family: "Sue Ellen Francisco", cursive;
+  color: #FF6D6D;
+  padding-bottom: 5px;
+}
+.hearthful__title {
+  font-size: 40px;
+  font-weight: 800;
+  font-family: "Shippori Mincho", serif;
+  line-height: 120%;
+  color: #2E4049;
+  padding-bottom: 20px;
+}
+.hearthful__text {
+  font-size: 20px;
+  line-height: 130%;
+  color: #727272;
+  padding-bottom: 30px;
+}
+.hearthful__item {
+  max-width: 520px;
+  padding-top: 10px;
+  padding-left: 15px;
+}
+.hearthful__item-title {
+  font-size: 25px;
+  font-weight: 800;
+  font-family: "Shippori Mincho", serif;
+  line-height: 120%;
+  color: #2E4049;
+}
+.hearthful__item-text {
+  font-size: 20px;
+  line-height: 130%;
+  color: #727272;
+}
+.hearthful__item-text::after {
+  content: "";
+  display: block;
+  border: 1px solid #C5C5C5;
+  max-width: 520px;
+  margin: 32px 0 10px;
+}
+.hearthful__item-text--last::after {
+  content: "";
+  display: none;
+}
+.hearthful__block {
+  display: flex;
+}
+.hearthful__numb {
+  font-size: 25px;
+  font-weight: 800;
+  font-family: "Shippori Mincho", serif;
+  color: #FFFFFF;
+  background-color: #FF6D6D;
+  border-radius: 50%;
+  width: 64px;
+  height: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hearthful__btn {
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #2E4049;
+  padding: 22px 39px;
+  margin-top: 40px;
+  margin-left: 80px;
+  border-radius: 35px;
+  transition: all 0.5s ease;
+}
+.hearthful__btn:hover {
+  background-color: #77D7D3;
+  color: #fff;
+}
+.hearthful__form {
+  max-width: 555px;
+}
+.hearthful__form-title {
+  font-size: 25px;
+  font-weight: 800;
+  font-family: "Shippori Mincho", serif;
+  line-height: 120%;
+  color: #2E4049;
+  padding-bottom: 10px;
+}
+.hearthful__form-text {
+  font-size: 20px;
+  line-height: 130%;
+  color: #FF6D6D;
+  padding-bottom: 20px;
+}
+.hearthful__input {
+  border: none;
+  padding: 24px 223px 24px 22px;
+  margin-bottom: 22px;
+}
+.hearthful__input::-moz-placeholder {
+  font-size: 18px;
+  color: #909090;
+}
+.hearthful__input::placeholder {
+  font-size: 18px;
+  color: #909090;
+}
+.hearthful__textarea {
+  font-size: 18px;
+  color: #909090;
+  resize: none;
+  border: none;
+  padding: 20px 221px 134px 22px;
+  margin-bottom: 22px;
+}
+.hearthful__form-btn {
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #F5F5F5;
+  background-color: #2E4049;
+  padding: 20px 66px;
+  border-radius: 34px;
+  border: 2px solid #2E4049;
+  transition: all 0.5s ease;
+}
+.hearthful__form-btn:hover {
+  background-color: #fff;
+  color: #2E4049;
+}
+
+/* Project list */
+/* Project */
+.project {
+  background-image: url(../images/project.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 822px;
+}
+.project::after {
+  content: "";
+  display: block;
+  background: linear-gradient(102.44deg, rgba(19, 35, 45, 0.5) 1.05%, rgba(9, 14, 16, 0.5) 100.34%);
+  height: 822px;
+}
+.project__inner {
+  position: relative;
+}
+.project__subtitle {
+  font-size: 50px;
+  font-family: "Sue Ellen Francisco", cursive;
+  color: #fff;
+  position: absolute;
+  top: 333px;
+}
+.project__title {
+  font-size: 90px;
+  font-weight: 800;
+  font-family: "Shippori Mincho", serif;
+  max-width: 585px;
+  color: #fff;
+  position: absolute;
+  top: 400px;
+}
+
+/* Images */
+.images__inner {
+  display: grid;
+  gap: 28px;
+  grid-template-columns: repeat(3, 3fr);
+  padding: 150px 0;
+}
+.images__block {
+  position: relative;
+}
+.images__list {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  bottom: 0%;
+  left: 0%;
+  background-color: #FF6D6D;
+  max-width: 100%;
+  transition: all 0.8s ease;
+}
+.images__zoom {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+}
+.images__text {
+  font-size: 25px;
+  font-weight: 800;
+  font-family: "Shippori Mincho", serif;
+  color: #fff;
+  width: 243px;
+  position: absolute;
+  left: 32px;
+  bottom: 47px;
+}
+.images__modal {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: #2E4049;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.8s ease 0s;
+}
+.images__modal:target {
+  opacity: 1;
+  visibility: visible;
+}
+.images__modal-area {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+.images__modal-body {
+  min-height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 10px;
+}
+.images__modal-content {
+  max-width: 1000px;
+  position: relative;
+}
+.images__modal-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 3;
+}
+
+.images__block:hover .images__list {
+  opacity: 1;
+  visibility: visible;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  font-size: 18px;
+  background: #fff;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.swiper {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.swiper-slide {
+  background-size: cover;
+  background-position: center;
+}
+
+.mySwiper2 {
+  height: 80%;
+  width: 100%;
+}
+
+.mySwiper {
+  height: 20%;
+  box-sizing: border-box;
+  padding: 10px 0;
+}
+
+.mySwiper .swiper-slide {
+  width: 25%;
+  height: 100%;
+  opacity: 0.4;
+}
+
+.mySwiper .swiper-slide-thumb-active {
+  opacity: 1;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+/* Blog list */
+/* Important */
+.important {
+  background-image: url(../images/important.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  height: 822px;
+}
+.important__inner {
+  position: relative;
+}
+.important__block {
+  max-width: 663px;
+  background-color: #fff;
+  padding: 50px 70px;
+  position: absolute;
+  top: 250px;
+  right: 0;
+}
+.important__top {
+  display: flex;
+  padding-bottom: 17px;
+}
+.important__top-text {
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #2E4049;
+}
+.important__top-text span {
+  padding: 0 15px;
+}
+.important__top-name {
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #FF6D6D;
+}
+.important__title {
+  font-size: 25px;
+  font-weight: 800;
+  line-height: 120%;
+  font-family: "Shippori Mincho", serif;
+  color: #2E4049;
+  max-width: 498px;
+  padding-bottom: 17px;
+}
+.important__text {
+  font-size: 20px;
+  line-height: 130%;
+  color: #727272;
+  max-width: 561px;
+  padding-bottom: 21px;
+}
+.important__btn {
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #2E4049;
+  background-color: #fff;
+  padding: 22px 47px;
+  border-radius: 34px;
+  border: 2px solid #2E4049;
+  transition: all 0.5s ease;
+}
+.important__btn:hover {
+  background-color: #2E4049;
+  color: #fff;
+}
+
+/* Reasons */
+.reasons__inner {
+  padding: 164px 0 130px;
+}
+.reasons__container {
+  display: flex;
+  padding-bottom: 35px;
+}
+.reasons__desc {
+  padding: 88px 39px;
+}
+.reasons__date {
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #2E4049;
+  padding-bottom: 17px;
+}
+.reasons__date span {
+  padding: 0 15px;
+}
+.reasons__title {
+  font-size: 25px;
+  font-weight: 800;
+  font-family: "Shippori Mincho", serif;
+  line-height: 120%;
+  color: #2E4049;
+  max-width: 560px;
+  padding-bottom: 17px;
+}
+.reasons__text {
+  font-size: 20px;
+  line-height: 130%;
+  color: #727272;
+  max-width: 545px;
+  padding-bottom: 30px;
+}
+.reasons__btn {
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #2E4049;
+  padding: 22px 47px;
+  border-radius: 34px;
+  border: 2px solid #2E4049;
+  transition: all 0.5s ease;
+}
+.reasons__btn:hover {
+  color: #fff;
+  background-color: #2E4049;
+}
+
+/* Blog-single list */
+.giving {
+  background-image: url(../images/important.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  height: 822px;
+}
+.giving::after {
+  content: "";
+  display: block;
+  background: linear-gradient(81.13deg, #1A1A1A -100%, rgba(196, 196, 196, 0) 150%);
+  height: 822px;
+}
+
+.counting {
+  background-image: url(../images/blog-single-2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 822px;
+}
+.counting::after {
+  content: "";
+  display: block;
+  background: linear-gradient(81.13deg, #1A1A1A -100%, rgba(196, 196, 196, 0) 150%);
+  height: 822px;
+}
+
+.alaska {
+  background-image: url(../images/blog-single-3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 822px;
+}
+.alaska::after {
+  content: "";
+  display: block;
+  background: linear-gradient(81.13deg, #1A1A1A -100%, rgba(196, 196, 196, 0) 150%);
+  height: 822px;
+}
+
+.francisco {
+  background-image: url(../images/blog-single-4.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 822px;
+}
+.francisco::after {
+  content: "";
+  display: block;
+  background: linear-gradient(81.13deg, #1A1A1A -100%, rgba(196, 196, 196, 0) 150%);
+  height: 822px;
+}
+
+.reached {
+  background-image: url(../images/blog-single-5.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom center;
+  height: 822px;
+}
+.reached::after {
+  content: "";
+  display: block;
+  background: linear-gradient(81.13deg, #1A1A1A -100%, rgba(196, 196, 196, 0) 150%);
+  height: 822px;
+}
+
+.costa {
+  background-image: url(../images/blog-single-6.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom center;
+  height: 822px;
+}
+.costa::after {
+  content: "";
+  display: block;
+  background: linear-gradient(81.13deg, #1A1A1A -100%, rgba(196, 196, 196, 0) 150%);
+  height: 822px;
+}
+
+.blog__single-inner {
+  position: relative;
+}
+.blog__single-subtitle {
+  font-size: 50px;
+  font-family: "Sue Ellen Francisco", cursive;
+  color: #fff;
+  position: absolute;
+  top: 333px;
+}
+.blog__single-subtitle span {
+  padding: 0 15px;
+}
+.blog__single-title {
+  font-size: 90px;
+  font-weight: 800;
+  font-family: "Shippori Mincho", serif;
+  color: #fff;
+  position: absolute;
+  top: 400px;
+}
+
+/* Blog */
+.blog__inner {
+  display: flex;
+  justify-content: center;
+  padding: 100px 0 130px;
+}
+.blog__desc {
+  width: 75%;
+}
+.blog__text {
+  font-size: 20px;
+  line-height: 130%;
+  color: #727272;
+  padding-bottom: 30px;
+}
+.blog__title {
+  font-size: 40px;
+  font-weight: 800;
+  font-family: "Shippori Mincho", serif;
+  line-height: 120%;
+  color: #2E4049;
+  padding: 50px 0 25px;
+}
+.blog__item {
+  font-size: 20px;
+  line-height: 130%;
+  list-style: inside;
+  color: #727272;
+  margin-left: 25px;
+  padding-bottom: 15px;
+}
+.blog__container {
+  text-align: center;
+  background-color: #FF6D6D;
+  margin: 35px 0 50px;
+  font-size: 30px;
+  line-height: 130%;
+  color: #fff;
+  background-image: url(../images/blog-single.svg);
+  background-repeat: no-repeat;
+  background-position: 50% 20%;
+  padding: 200px 151px 72px;
+}
+.blog__container img {
+  display: flex;
+  margin: 0 auto;
+  padding: 72px 0 21px;
+}
+.blog__container-text {
+  font-size: 30px;
+  line-height: 130%;
+  color: #fff;
+  max-width: 584px;
+  text-align: center;
+  margin: 0 auto;
+}
+.blog__subtitle {
+  font-size: 25px;
+  font-weight: 800;
+  font-family: "Shippori Mincho", serif;
+  line-height: 120%;
+  color: #2E4049;
+  padding-bottom: 15px;
+}
+.blog__item-num {
+  list-style: none;
+  list-style-type: inherit;
+}
+.blog__donator {
+  display: flex;
+  padding: 90px 53px;
+}
+.blog__donator-desc {
+  padding-left: 20px;
+}
+.blog__donator-name {
+  font-size: 25px;
+  font-weight: 700;
+  font-family: "Shippori Mincho", serif;
+  color: #2E4049;
+}
+.blog__donator-text {
+  font-size: 20px;
+  line-height: 130%;
+  color: #727272;
+  max-width: 616px;
+  padding-bottom: 10px;
+}
+
+/* Contact */
+/* Touch */
+.touch {
+  background-image: url(../images/touch.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 822px;
+}
+.touch::after {
+  content: "";
+  display: block;
+  background: linear-gradient(81.13deg, #1A1A1A 2.72%, rgba(196, 196, 196, 0) 97.44%);
+  background-blend-mode: multiply;
+  height: 822px;
+}
+.touch__inner {
+  position: relative;
+}
+.touch__subtitle {
+  font-size: 50px;
+  font-family: "Sue Ellen Francisco", cursive;
+  color: #fff;
+  position: absolute;
+  top: 333px;
+}
+.touch__title {
+  font-size: 90px;
+  font-weight: 800;
+  font-family: "Shippori Mincho", serif;
+  color: #fff;
+  position: absolute;
+  top: 400px;
+}
+
+/* Contact */
+.contact__inner {
+  display: flex;
+  justify-content: space-between;
+  padding: 150px 0;
+}
+.contact__desc {
+  max-width: 565px;
+}
+.contact__top {
+  font-size: 35px;
+  font-family: "Sue Ellen Francisco", cursive;
+  color: #FF6D6D;
+  padding-bottom: 5px;
+}
+.contact__title {
+  font-size: 40px;
+  font-weight: 800;
+  font-family: "Shippori Mincho", serif;
+  color: #2E4049;
+  padding-bottom: 20px;
+}
+.contact__text {
+  font-size: 20px;
+  color: #727272;
+  padding-bottom: 45px;
+}
+.contact__connect {
+  display: flex;
+  align-items: center;
+  padding-bottom: 45px;
+}
+.contact__connect-desc {
+  padding-left: 44px;
+}
+.contact__connect-type {
+  font-size: 20px;
+  font-weight: 800;
+  font-family: "Shippori Mincho", serif;
+  color: #2E4049;
+}
+.contact__connect-link {
+  font-size: 20px;
+  color: #727272;
+  transition: all 0.5s ease;
+}
+.contact__connect-link:hover {
+  color: #FF6D6D;
+}
+.contact__subtitle {
+  font-size: 25px;
+  font-weight: 800;
+  font-family: "Shippori Mincho", serif;
+  color: #2E4049;
+  padding-bottom: 15px;
+}
+.contact__social {
+  display: flex;
+  gap: 24px;
+}
+.contact__block {
+  max-width: 560px;
+}
+.contact__input {
+  border: none;
+  padding: 24px 270px 24px 22px;
+  margin-bottom: 20px;
+}
+.contact__input::-moz-placeholder {
+  font-size: 18px;
+  color: #909090;
+}
+.contact__input::placeholder {
+  font-size: 18px;
+  color: #909090;
+}
+.contact__textarea {
+  font-size: 18px;
+  color: #909090;
+  resize: none;
+  border: none;
+  padding: 20px 248px 129px 22px;
+  margin-bottom: 50px;
+}
+.contact__btn {
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #2E4049;
+  padding: 20px 66px;
+  border-radius: 34px;
+  border: 2px solid #2E4049;
+  transition: all 0.5s ease;
+}
+.contact__btn:hover {
+  border: 2px solid #2E4049;
+  background-color: #fff;
+  color: #2E4049;
+}
+
+/* FAQ list */
+/* Questions */
+.questions {
+  background-image: url(../images/faq.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  height: 822px;
+}
+.questions::after {
+  content: "";
+  display: block;
+  background: linear-gradient(92.16deg, #383F42 -6.98%, rgba(85, 93, 97, 0) 99.92%);
+  height: 822px;
+}
+.questions__inner {
+  position: relative;
+}
+.questions__subtitle {
+  font-size: 50px;
+  font-family: "Sue Ellen Francisco", cursive;
+  color: #fff;
+  position: absolute;
+  top: 333px;
+}
+.questions__title {
+  font-size: 90px;
+  font-weight: 800;
+  font-family: "Shippori Mincho", serif;
+  color: #fff;
+  max-width: 450px;
+  position: absolute;
+  top: 400px;
+}
+
+/* Any */
+.any__inner {
+  display: flex;
+  justify-content: space-between;
+  padding: 150px 0;
+}
+.any__block {
+  background-image: url(../images/any.jpg);
+  background-repeat: no-repeat;
+  height: 404px;
+  max-width: 490px;
+}
+.any__block-desc {
+  padding: 71px 52px;
+}
+.any__block-title {
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 120%;
+  color: #2E4049;
+  padding-bottom: 25px;
+}
+.any__block-text {
+  font-size: 25px;
+  font-weight: 500;
+  line-height: 130%;
+  color: #2E4049;
+  padding-bottom: 28px;
+}
+.any__block-btn {
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #2E4049;
+  padding: 20px 37px;
+  border-radius: 34px;
+  border: 2px solid #2E4049;
+  transition: all 0.5s ease;
+}
+.any__block-btn:hover {
+  border: 2px solid #2E4049;
+  background-color: #fff;
+  color: #2E4049;
+}
+
+.faq {
+  max-width: 660px;
+}
+
+.transition, p, ul li i:before, ul li i:after {
+  transition: all 0.3s;
+}
+
+#faq .no-select, #faq h2 {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+
+#faq h2 {
+  font-size: 25px;
+  font-weight: 800;
+  font-family: "Shippori Mincho", serif;
+  line-height: 120%;
+  text-align: left;
+  padding: 15px 15px 0;
+  text-transform: none;
+  letter-spacing: 1px;
+  display: block;
+  margin: 0;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+#faq p {
+  color: #727272;
+  text-align: left;
+  font-family: "hm_light", sans-serif;
+  font-size: 20px;
+  line-height: 130%;
+  position: relative;
+  overflow: hidden;
+  max-height: 250px;
+  will-change: max-height;
+  contain: layout;
+  display: inline-block;
+  opacity: 1;
+  transform: translate(0, 0);
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding: 0 15px 0 15px;
+  transition: 0.3s opacity, 0.6s max-height;
+  -webkit-hyphens: auto;
+          hyphens: auto;
+  z-index: 2;
+}
+#faq p::after {
+  content: "";
+  display: block;
+  width: 660px;
+  border: 1px solid #D6D6D6;
+  margin-top: 35px;
+}
+
+#faq ul {
+  list-style: none;
+  perspective: 900;
+  padding: 0;
+  margin: 0;
+}
+
+#faq ul li {
+  position: relative;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+  /*padding-bottom: 4px;*/
+  /*padding-top: 18px;*/
+  background: #fff;
+  box-shadow: 0 3px 10px -2px rgba(0, 0, 0, 0.1);
+  -webkit-tap-highlight-color: transparent;
+}
+
+#faq ul li + li {
+  margin-top: 15px;
+}
+
+#faq ul li:last-of-type {
+  padding-bottom: 0;
+}
+
+#faq ul li i {
+  position: absolute;
+  transform: translate(-6px, 0);
+  margin-top: 28px;
+  right: 15px;
+}
+
+#faq ul li i:before, ul li i:after {
+  content: "";
+  position: absolute;
+  background-color: #2F2F2F;
+  width: 3px;
+  height: 9px;
+}
+
+#faq ul li i:before {
+  transform: translate(-2px, 0) rotate(45deg);
+}
+
+#faq ul li i:after {
+  transform: translate(2px, 0) rotate(-45deg);
+}
+
+#faq ul li input[type=checkbox] {
+  position: absolute;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0;
+  touch-action: manipulation;
+}
+
+#faq ul li input[type=checkbox]:checked ~ h2 {
+  color: #000;
+}
+
+#faq ul li input[type=checkbox]:checked ~ p {
+  /*margin-top: 0;*/
+  max-height: 0;
+  transition: 0.3s;
+  opacity: 0;
+  /*transform: translate(0, 50%);*/
+}
+
+#faq ul li input[type=checkbox]:checked ~ i:before {
+  transform: translate(2px, 0) rotate(45deg);
+}
+
+#faq ul li input[type=checkbox]:checked ~ i:after {
+  transform: translate(-2px, 0) rotate(-45deg);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+img {
+  vertical-align: middle;
+  height: auto;
+}/*# sourceMappingURL=style.css.map */
